@@ -5,6 +5,8 @@ from keras.models import load_model
 import keras.backend as k
 import os
 
+
+# FOR MORE INFORMATION ABOUT FREEZE GRAPH: https://github.com/tensorflow/tensorflow/issues/29253
 # def freeze_graph(session, keep_var_names=None, output_names=None, clear_devices=True):
 #     graph = session.graph
 #     # with graph.as_default():
@@ -44,6 +46,7 @@ import os
 #     if not output_node_names:
 #         print("You need to supply the name of a node to --output_node_names.")
 #         return -1
+#
 #
 #     # We retrieve our checkpoint fullpath
 #     checkpoint = tf.train.get_checkpoint_state(model_dir)
